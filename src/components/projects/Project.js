@@ -1,16 +1,28 @@
 import React from "react";
+import "./Project.scss";
 
 export default function Project({
   name,
   preview,
   description,
+  theme,
   stackLogos,
   codeRepo,
   releaseRepo,
 }) {
+  var textColour = "text-dark";
+  var backgroundColour = "bg-secondary";
+
+  if (theme == 1) {
+    backgroundColour = "bg-dark";
+    textColour = "text-primary";
+  } else if (theme == 2) {
+    backgroundColour = "bg-primary";
+  }
+
   return (
     <div className="reveal col-sm-12">
-      <div className="row bg-secondary">
+      <div className={"row " + backgroundColour + " " + textColour}>
         <h3 className="p-2 col-sm-12">{name}</h3>
         <div className="col-sm-12 col-xxl-6 d-flex flex-column align-items-center justify-content-center">
           <h3 className="d-none d-xxl-block">preview</h3>
@@ -33,7 +45,9 @@ export default function Project({
                   return (
                     <div className="col col-sm-2">
                       <img
-                        className="w-100 logo"
+                        className={
+                          "w-100 logo " + (theme == 1 ? "svg-primary" : "")
+                        }
                         src={logo}
                         alt={logo + " logo"}
                       />
@@ -52,12 +66,16 @@ export default function Project({
                   >
                     Code Repo
                   </a>
-                  <a
-                    className="text-decoration-none h5 p-2 bg-success rounded github-button"
-                    href={releaseRepo}
-                  >
-                    Release Repo
-                  </a>
+                  {releaseRepo ? (
+                    <a
+                      className="text-decoration-none h5 p-2 bg-success rounded github-button"
+                      href={releaseRepo}
+                    >
+                      Release Repo
+                    </a>
+                  ) : (
+                    " "
+                  )}
                 </div>
               </div>
             </div>
