@@ -1,0 +1,46 @@
+body{
+    grid-template-rows: repeat(5, 1fr);
+}
+
+article{
+    margin: 1.5vw;
+}
+
+h3{
+    text-align: center;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li img{
+    width: 100%;
+}
+
+.sections{
+    grid-row: 2/6
+}
+
+#educationSection{
+    grid-column: 1/9;
+    background-color: #FFC300;
+}
+
+#certificatesSection{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    grid-column: 9/13;
+    background-color: #F87537;
+    max-height: 38vw;
+    overflow-x: hidden;
+    overflow-y: auto;
+    font-weight: bold;
+}
+
+#certificatesSection li{
+    margin-top: 1.5vw;
+}
+
+

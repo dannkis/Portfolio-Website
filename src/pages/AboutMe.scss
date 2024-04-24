@@ -1,0 +1,94 @@
+#portraitText h1 {
+  background-image: linear-gradient(45deg, #f87537, #fff23e, #ff792e, #ffc300);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradient 15s ease infinite;
+}
+
+@media screen and (max-width: 768px) {
+  /* For screens smaller than 768px */
+  .nameText1 {
+    font-size: 30pt;
+  }
+
+  .nameText2 {
+    font-size: 20pt;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  /* For screens wider than 1024px */
+  .nameText1 {
+    font-size: 4vw;
+  }
+
+  .nameText2 {
+    font-size: 2vw;
+  }
+}
+
+#aboutMeSection {
+  background-color: #ffc300;
+  height: 400px;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes borderPulsing {
+  0% {
+    border: 0.5em solid #ff792e;
+  }
+  50% {
+    border: 1em solid #ff792e;
+  }
+  100% {
+    border: 0.5em solid #ff792e;
+  }
+}
+
+.portraitImage {
+  border-radius: 100%;
+  border: 0.5em solid transparent;
+}
+
+.portraitBorderBack {
+  border-radius: 100%;
+  background: linear-gradient(to bottom, black, black) padding-box,
+    conic-gradient(from 0deg, #ff792e, #ffc300) border-box;
+  border: 0.5em solid transparent;
+  animation: spin1 20s linear infinite;
+}
+
+#portraitBackground {
+  animation: spin2 60s linear infinite;
+}
+
+@keyframes spin1 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes spin2 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}

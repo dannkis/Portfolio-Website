@@ -1,0 +1,80 @@
+nav {
+  font-size: 16pt;
+  font-weight: bold;
+
+  .nav-link {
+    color: #fc9c1c !important;
+
+    &:hover {
+      color: #ffc300;
+      text-shadow: 0 0 5px #a35f00;
+    }
+
+    &.active {
+      color: #ffc300 !important;
+    }
+  }
+
+  .dropdown-item {
+    font-size: 12pt;
+    transition: 0.2s;
+    &:hover {
+      background-color: #ffc300;
+      font-size: larger;
+    }
+  }
+}
+
+.hide{
+  opacity: 0%;
+}
+
+/* Styles for visible navbar */
+.navbar-visible {
+  transform: translateY(0em);
+  transition: all 0.5s ease;
+}
+
+/* Styles for hidden navbar */
+.navbar-hidden {
+  transform: translateY(-10em);
+  transition: all 0.5s ease;
+}
+
+.contactInfo {
+  position: relative;
+}
+
+.contactInfo ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  padding: 0;
+  margin: 0;
+  background-color: #ffc300;
+  border-radius: 10px;
+  z-index: 1;
+}
+
+.contactInfo:hover ul {
+  display: block;
+}
+
+.contactInfo ul li {
+  list-style: none;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+  margin: 0.5rem;
+  text-align: center;
+}
+
+.contactInfo ul li:last-child {
+  border-bottom: none;
+}
+
+.contactInfo ul li .linkStyle {
+  text-decoration: none;
+  color: #333;
+  font-size: smaller;
+}

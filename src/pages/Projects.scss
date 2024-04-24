@@ -1,0 +1,23 @@
+.logo {
+  max-width: 7em;
+}
+
+.project-img {
+  filter: grayscale(100%);
+  transition: 0.5s;
+  &:hover {
+    filter: none;
+  }
+}
+
+.github-section {
+  a {
+    color: #171b27;
+    transition: 0.5s;
+
+    &:hover {
+      filter: brightness(85%);
+      font-size: larger;
+    }
+  }
+}
