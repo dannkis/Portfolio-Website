@@ -1,8 +1,9 @@
 import React from "react";
 import "./Projects.scss";
 import Project from "../components/projects/Project";
-import RotaMaker from "../images/projects/project-rota/project-rota.png";
-import WeatherApp from "../images/projects/gui-weather-app-concept/gui-weather-app-concept.png";
+import RotaMaker from "../images/projects/rota-maker/preview.png";
+import WeatherApp from "../images/projects/weather-app/preview.png";
+import CryptoWalletApp from "../images/projects/crypto-wallet/preview.png";
 //General Logos
 import vsCodeLogo from "../images/projects/logos/vs.svg";
 import reactLogo from "../images/projects/logos/react.svg";
@@ -29,6 +30,7 @@ export default function Projects() {
                   This tool makes it easier to transition from non-technical to
                   technical scheduling."
         theme={0}
+        layout={0}
         stackLogos={[cSharpLogo, msAccessLogo, vsCodeLogo, dotNetLogo]}
         codeRepo="https://github.com/dannkis/RotaMaker-4"
         releaseRepo="https://github.com/dannkis/RotaMaker-4-RELEASE"
@@ -37,11 +39,21 @@ export default function Projects() {
       <Project
         name="Agronova"
         preview={WeatherApp}
-        description="Crop Farmers Weather Web-App, a comprehensive tool designed to empower farmers with essential weather insights for optimized crop management. This user-friendly application integrates real-time meteorological data with advanced analytics, offering personalized forecasts and actionable recommendations tailored to specific crops and regions."
+        description="Crop Farmers Weather Web-App, a comprehensive tool designed to empower farmers with essential weather insights for optimised crop management. This user-friendly application integrates real-time meteorological data with advanced analytics, offering personalised forecasts and actionable recommendations tailored to specific crops and regions."
         theme={1}
         stackLogos={[vsCodeLogo, bootstrapLogo, sassLogo, figmaLogo, reactLogo]}
         codeRepo="https://github.com/dannkis/GUI-Weather-App-Concept"
         releaseRepo={null}
+      />
+      <Project
+      name="CryptiQ"
+      preview={CryptoWalletApp}
+      description="A secure and user-friendly crypto wallet, designed for effortless management and transactions of various cryptocurrencies. With intuitive design and robust security features, it offers seamless access to your digital assets anytime, anywhere."
+      theme={2}
+      layout={0}
+      stackLogos={[vsCodeLogo, bootstrapLogo, sassLogo, figmaLogo, reactLogo]}
+      codeRepo="https://github.com/dannkis/Crypto-Wallet-App-Concept"
+      releaseRepo={null}
       />
     </div>
   );
