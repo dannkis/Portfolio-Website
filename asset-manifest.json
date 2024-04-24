@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/Portfolio-Website/static/css/main.dcd2e32b.chunk.css",
+    "main.js": "/Portfolio-Website/static/js/main.f05a1f10.chunk.js",
+    "main.js.map": "/Portfolio-Website/static/js/main.f05a1f10.chunk.js.map",
+    "runtime-main.js": "/Portfolio-Website/static/js/runtime-main.40f03bec.js",
+    "runtime-main.js.map": "/Portfolio-Website/static/js/runtime-main.40f03bec.js.map",
+    "static/js/2.97eb8834.chunk.js": "/Portfolio-Website/static/js/2.97eb8834.chunk.js",
+    "static/js/2.97eb8834.chunk.js.map": "/Portfolio-Website/static/js/2.97eb8834.chunk.js.map",
+    "index.html": "/Portfolio-Website/index.html",
+    "precache-manifest.963cd9611ac11ebf13568569ceb00d20.js": "/Portfolio-Website/precache-manifest.963cd9611ac11ebf13568569ceb00d20.js",
+    "service-worker.js": "/Portfolio-Website/service-worker.js",
+    "static/css/main.dcd2e32b.chunk.css.map": "/Portfolio-Website/static/css/main.dcd2e32b.chunk.css.map",
+    "static/js/2.97eb8834.chunk.js.LICENSE.txt": "/Portfolio-Website/static/js/2.97eb8834.chunk.js.LICENSE.txt",
+    "static/media/access.svg": "/Portfolio-Website/static/media/access.c173a764.svg",
+    "static/media/blob.svg": "/Portfolio-Website/static/media/blob.5907e048.svg",
+    "static/media/bootstrap.svg": "/Portfolio-Website/static/media/bootstrap.81f84ecf.svg",
+    "static/media/c-sharp.svg": "/Portfolio-Website/static/media/c-sharp.8dace8a4.svg",
+    "static/media/dot-net-logo.svg": "/Portfolio-Website/static/media/dot-net-logo.69cd43d2.svg",
+    "static/media/figma.svg": "/Portfolio-Website/static/media/figma.7014a1da.svg",
+    "static/media/gui-weather-app-concept.png": "/Portfolio-Website/static/media/gui-weather-app-concept.2f7604cb.png",
+    "static/media/javaCertificate.jpg": "/Portfolio-Website/static/media/javaCertificate.b4c0e58b.jpg",
+    "static/media/jsCertificate.jpg": "/Portfolio-Website/static/media/jsCertificate.78c1ee7e.jpg",
+    "static/media/level2Certificate.jpg": "/Portfolio-Website/static/media/level2Certificate.5e6d4f56.jpg",
+    "static/media/matrixCertificate.jpg": "/Portfolio-Website/static/media/matrixCertificate.0665d151.jpg",
+    "static/media/portraitImage2-cr2.png": "/Portfolio-Website/static/media/portraitImage2-cr2.7557507b.png",
+    "static/media/project-rota.png": "/Portfolio-Website/static/media/project-rota.c3d6edd4.png",
+    "static/media/react.svg": "/Portfolio-Website/static/media/react.83665df4.svg",
+    "static/media/sass.svg": "/Portfolio-Website/static/media/sass.4d9d58ee.svg",
+    "static/media/virtualCertificate.jpg": "/Portfolio-Website/static/media/virtualCertificate.40311dbc.jpg",
+    "static/media/vs.svg": "/Portfolio-Website/static/media/vs.81b17f4c.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.40f03bec.js",
+    "static/js/2.97eb8834.chunk.js",
+    "static/css/main.dcd2e32b.chunk.css",
+    "static/js/main.f05a1f10.chunk.js"
+  ]
+}
