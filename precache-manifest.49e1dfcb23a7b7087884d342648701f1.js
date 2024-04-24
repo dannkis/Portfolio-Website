@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "f8fb9f23feb1327422eb6d29fb3466b7",
+    "revision": "5f9d369d03ab661cdcc04a199ef89540",
     "url": "/Portfolio-Website/index.html"
   },
   {
-    "revision": "6a2d8ae1e6b964e93def",
-    "url": "/Portfolio-Website/static/css/main.dcd2e32b.chunk.css"
+    "revision": "c07af2620e438c7853f8",
+    "url": "/Portfolio-Website/static/css/main.8222b97d.chunk.css"
   },
   {
-    "revision": "de18102e647e7b942c04",
-    "url": "/Portfolio-Website/static/js/2.97eb8834.chunk.js"
+    "revision": "19e3b41057e6f7385742",
+    "url": "/Portfolio-Website/static/js/2.4f9a6ef8.chunk.js"
   },
   {
     "revision": "99032c168766576f008c62293b503c20",
-    "url": "/Portfolio-Website/static/js/2.97eb8834.chunk.js.LICENSE.txt"
+    "url": "/Portfolio-Website/static/js/2.4f9a6ef8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6a2d8ae1e6b964e93def",
-    "url": "/Portfolio-Website/static/js/main.f05a1f10.chunk.js"
+    "revision": "c07af2620e438c7853f8",
+    "url": "/Portfolio-Website/static/js/main.bfb76ab3.chunk.js"
   },
   {
     "revision": "1c23154faea57830bf80",
@@ -48,10 +48,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio-Website/static/media/figma.7014a1da.svg"
   },
   {
-    "revision": "2f7604cb93eac05788cfc644b18fbe16",
-    "url": "/Portfolio-Website/static/media/gui-weather-app-concept.2f7604cb.png"
-  },
-  {
     "revision": "b4c0e58b8a50cf7fce2817c88a215ffb",
     "url": "/Portfolio-Website/static/media/javaCertificate.b4c0e58b.jpg"
   },
@@ -72,8 +68,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/Portfolio-Website/static/media/portraitImage2-cr2.7557507b.png"
   },
   {
+    "revision": "2f7604cb93eac05788cfc644b18fbe16",
+    "url": "/Portfolio-Website/static/media/preview.2f7604cb.png"
+  },
+  {
+    "revision": "837a89097eda7e205848a30a8bd577b1",
+    "url": "/Portfolio-Website/static/media/preview.837a8909.png"
+  },
+  {
     "revision": "c3d6edd4f2a675eb766b7714fb856870",
-    "url": "/Portfolio-Website/static/media/project-rota.c3d6edd4.png"
+    "url": "/Portfolio-Website/static/media/preview.c3d6edd4.png"
   },
   {
     "revision": "83665df43d14aa5865089fa90b3d3617",
