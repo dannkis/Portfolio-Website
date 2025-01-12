@@ -74,7 +74,7 @@ export default function Education() {
             </li>
             <li>
               <Certificate
-                name="Matrix Challenge 2020 Participants Certificate.</p>
+                name="Matrix Challenge 2020 Participants Certificate.
                 Level 2 Diploma in ICT Systems and Principles for IT
                   Professionals."
                 preview={matrixCertificate}
