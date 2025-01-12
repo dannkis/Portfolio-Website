@@ -32,7 +32,7 @@ export default function AboutMe() {
           <hgroup>
             <h1 className="nameText1">daniilZhelyazkov</h1>
             <h5 className="text-white nameText2">
-              myPortfolio<span className="blink">_</span>
+              myPortfolioTest<span className="blink">_</span>
             </h5>
           </hgroup>
         </article>
