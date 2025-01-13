@@ -89,10 +89,22 @@ export default function Project({
   }
 
   return (
-    <div className="reveal col-sm-12">
-      <div className={"row " + backgroundColour + " " + textColour}>
+    <div
+      className={
+        "reveal col-sm-12 min-vh-100 " + backgroundColour + " " + textColour
+      }
+    >
+      <div className="row align-content-center">
         <h3 className="p-2 col-sm-12">{name}</h3>
-        {layout == 0 ? (<>{ImageSection()} {DescriptionSection()}</>) : (<>{DescriptionSection()} {ImageSection()}</>)}
+        {layout == 0 ? (
+          <>
+            {ImageSection()} {DescriptionSection()}
+          </>
+        ) : (
+          <>
+            {DescriptionSection()} {ImageSection()}
+          </>
+        )}
       </div>
     </div>
   );

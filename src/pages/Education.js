@@ -11,10 +11,10 @@ import Certificate from "../components/education/Certificate";
 export default function Education() {
   return (
     <div
-      className="d-flex reveal row text-primary educationAndCertificates"
+      className="d-flex reveal row text-primary educationAndCertificates min-vh-100"
       name="scroll-here-education"
     >
-      <section className="col-12 col-sm-12 col-lg-6 d-flex flex-column align-items-start limiter">
+      <section className="col-12 col-sm-12 col-lg-6 d-flex flex-column justify-content-center limiter">
         <article>
           <h3 className="text-secondary text-center">education</h3>
           <hgroup>

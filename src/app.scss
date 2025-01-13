@@ -4,24 +4,28 @@
   font-family: "Fira Code", monospace;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 ::-webkit-scrollbar {
   width: 10px;
   height: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #FFC300;
+  background: #ffc300;
 }
 
 ::-webkit-scrollbar-track {
   background: rgba(0, 0, 0, 0);
 }
 
-p{
+p {
   font-size: 18pt;
 }
 
-.text-justify{
+.text-justify {
   text-align: justify;
 }
 
@@ -30,10 +34,10 @@ p{
 }
 
 .navbar-toggler {
-  background-color: #F87537 !important;
+  background-color: #f87537 !important;
 }
 
-.row{
+.row {
   padding: 1em 0;
 }
 
@@ -56,5 +60,3 @@ p{
 .blink {
   animation: blink-animation 0.8s linear infinite;
 }
-
-

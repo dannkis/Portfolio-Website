@@ -30,7 +30,10 @@ function addAnimation() {
 
 export default function Skills() {
   return (
-    <div className="d-flex row reveal skillsSection bg-primary" id="scroll-here-skills">
+    <div
+      className="d-flex row reveal skillsSection bg-primary"
+      id="scroll-here-skills"
+    >
       <div className="d-flex flex-column col col-sm-12 col-lg-4 skills-section align-items-stretch">
         <div className="d-flex flex-column p-4 bg-secondary rounded h-100 mt-4">
           <article>
@@ -42,30 +45,30 @@ export default function Skills() {
               databases.
             </p>
           </article>
-            <div className="d-flex align-items-end h-100">
-              <Carousel
-                tag_symbol={"#"}
-                TAGS={[
-                  "c#",
-                  "java",
-                  "python",
-                  "php",
-                  "javascript",
-                  "react.js",
-                  "sass",
-                  "bootstrap",
-                  "node.js",
-                ]}
-                ROWS={2}
-                TAGS_PER_ROW={5}
-                DURATION={30000}
-              />
+          <div className="d-flex align-items-end h-100">
+            <Carousel
+              tag_symbol={"#"}
+              TAGS={[
+                "c#",
+                "java",
+                "python",
+                "php",
+                "javascript",
+                "react.js",
+                "sass",
+                "bootstrap",
+                "node.js",
+              ]}
+              ROWS={2}
+              TAGS_PER_ROW={5}
+              DURATION={30000}
+            />
           </div>
         </div>
       </div>
 
       <div className="col col-sm-12 col-lg-4 skills-section d-flex flex-column justify-content-center align-items-center">
-      <h1 className="text-center pb-2">skills</h1>
+        <h1 className="text-center pb-2">skills</h1>
         <div className="p-4 bg-success rounded mt-4" id="section2">
           <article>
             <h3 className="text-center">problem-solving</h3>
