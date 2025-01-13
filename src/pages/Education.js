@@ -5,6 +5,7 @@ import javaCertificate from "../images/certificates/javaCertificate.jpg";
 import javascriptCertificate from "../images/certificates/jsCertificate.jpg";
 import level2Certificate from "../images/certificates/level2Certificate.jpg";
 import matrixCertificate from "../images/certificates/matrixCertificate.jpg";
+import cSharpCertificate from "../images/certificates/cSharpCertificate.jpg";
 import Certificate from "../components/education/Certificate";
 
 export default function Education() {
@@ -78,6 +79,12 @@ export default function Education() {
                 Level 2 Diploma in ICT Systems and Principles for IT
                   Professionals."
                 preview={matrixCertificate}
+              />
+            </li>
+            <li>
+              <Certificate
+                name="C# Intermediate Certificate."
+                preview={cSharpCertificate}
               />
             </li>
           </ul>
