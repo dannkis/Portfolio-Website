@@ -91,11 +91,16 @@ export default function Project({
   return (
     <div
       className={
-        "reveal col-sm-12 min-vh-100 " + backgroundColour + " " + textColour
+        "reveal col-sm-12 min-vh-100 d-flex align-content-center " +
+        backgroundColour +
+        " " +
+        textColour
       }
     >
-      <div className="row align-content-center">
-        <h3 className="p-2 col-sm-12">{name}</h3>
+      <div className="row">
+        <h1 className="p-2 col-sm-12 d-flex align-items-center justify-content-center">
+          {name}
+        </h1>
         {layout == 0 ? (
           <>
             {ImageSection()} {DescriptionSection()}
