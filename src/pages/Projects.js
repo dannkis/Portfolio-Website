@@ -19,13 +19,13 @@ import figmaLogo from "../images/projects/logos/figma.svg";
 
 export default function Projects() {
   return (
-    <div className="row reveal text-center" name="scroll-here-projects">
+    <div className="row reveal text-center" id="scroll-here-projects">
       <h1 className="col-sm-12 text-primary">projects</h1>
       <Project
         name="Rota Maker 4"
         preview={RotaMaker}
         description="RotaMaker 4 helps businesses in the hospitality sector to
-                  create/share schedules and manage employee data easily and
+                  create and share schedules and manage employee data easily and
                   quickly, while keeping it simple.
                   This tool makes it easier to transition from non-technical to
                   technical scheduling."
@@ -46,14 +46,14 @@ export default function Projects() {
         releaseRepo={null}
       />
       <Project
-      name="CryptiQ"
-      preview={CryptoWalletApp}
-      description="A secure and user-friendly crypto wallet, designed for effortless management and transactions of various cryptocurrencies. With intuitive design and robust security features, it offers seamless access to your digital assets anytime, anywhere."
-      theme={2}
-      layout={0}
-      stackLogos={[vsCodeLogo, bootstrapLogo, sassLogo, figmaLogo, reactLogo]}
-      codeRepo="https://github.com/dannkis/Crypto-Wallet-App-Concept"
-      releaseRepo={null}
+        name="CryptiQ"
+        preview={CryptoWalletApp}
+        description="A secure and user-friendly crypto wallet, designed for effortless management and transactions of various cryptocurrencies. With intuitive design and robust security features, it offers seamless access to your digital assets anytime, anywhere."
+        theme={2}
+        layout={0}
+        stackLogos={[vsCodeLogo, bootstrapLogo, sassLogo, figmaLogo, reactLogo]}
+        codeRepo="https://github.com/dannkis/Crypto-Wallet-App-Concept"
+        releaseRepo={null}
       />
     </div>
   );

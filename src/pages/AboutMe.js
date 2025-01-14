@@ -6,7 +6,7 @@ import { Helmet } from "react-helmet";
 export default function AboutMe() {
   //Testing the automatic build
   return (
-    <div className="row" name="scroll-here-intro">
+    <div className="row min-vh-100" name="scroll-here-intro">
       <div className="col-12 col-md-6">
         <figure
           className="user-select-none d-flex justify-content-center align-items-center position-relative  overflow-hidden"
