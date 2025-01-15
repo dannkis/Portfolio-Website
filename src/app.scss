@@ -51,6 +51,10 @@ p {
   }
 }
 
+.max-h-2em {
+  max-height: 2em;
+}
+
 @keyframes blink-animation {
   50% {
     opacity: 0;

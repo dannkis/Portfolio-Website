@@ -23,7 +23,7 @@ export default function Project({
 
   function ImageSection() {
     return (
-      <div className="col-sm-12 col-xxl-6 d-flex flex-column align-items-center justify-content-center">
+      <div className="col-sm-12 col-xxl-6 d-flex flex-column align-items-center justify-content-center h-100">
         <h3 className="d-none d-xxl-block">preview</h3>
         <img
           className="img-fluid data-enlargable project-img rounded"
@@ -36,7 +36,7 @@ export default function Project({
 
   function DescriptionSection() {
     return (
-      <article className="col-sm-12 col-xxl-6">
+      <article className="col-sm-12 col-xxl-6 h-100">
         <div className="row h-100">
           <div className="col-12 col-sm-12 col-xl-12 d-flex flex-column align-items-center justify-content-center pr-0">
             <h3 className="">description</h3>
@@ -97,8 +97,8 @@ export default function Project({
         textColour
       }
     >
-      <div className="row">
-        <h1 className="p-2 col-sm-12 d-flex align-items-center justify-content-center">
+      <div className="row ">
+        <h1 className="col-sm-12 d-flex align-items-center justify-content-center max-h-2em">
           {name}
         </h1>
         {layout == 0 ? (
