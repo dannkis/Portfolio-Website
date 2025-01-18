@@ -40,58 +40,95 @@ export default function Projects() {
       codeRepo: "https://github.com/dannkis/Crypto-Wallet-App-Concept",
       releaseRepo: null,
     },
+    {
+      id: 4,
+      title: "Rota Maker 4",
+      image: RotaMaker,
+      tools: [cSharpLogo, msAccessLogo, dotNetLogo, vsCodeLogo],
+      codeRepo: "https://github.com/dannkis/RotaMaker-4",
+      releaseRepo: "https://github.com/dannkis/RotaMaker-4-RELEASE",
+    },
+    {
+      id: 5,
+      title: "Agronova",
+      image: WeatherApp,
+      tools: [reactLogo, bootstrapLogo, sassLogo, figmaLogo],
+      codeRepo: "https://github.com/dannkis/GUI-Weather-App-Concept",
+      releaseRepo: null,
+    },
+    {
+      id: 6,
+      title: "CryptiQ",
+      image: CryptoWalletApp,
+      tools: [reactLogo, bootstrapLogo, sassLogo, figmaLogo],
+      codeRepo: "https://github.com/dannkis/Crypto-Wallet-App-Concept",
+      releaseRepo: null,
+    },
   ];
 
   return (
-    <div className="min-vh-100">
+    <div className="min-vh-100 row justify-content-center">
+      <div className="col-xs-12">
+        {" "}
+        <h3 className="text-secondary text-center scroll-here-projects">
+          projects
+        </h3>
+      </div>
+
       {projectData.map((project) => (
-        <div key={project.id} className="card">
-          <figure className="figuree">
-            <img className="image" src={project.image} alt={project.title} />
-            <figcaption className="play_button_wrapper">
+        <div className="col-xs-12 col-md-6 col-xl-3">
+          <div key={project.id} className="card bg-secondary border-none">
+            <figure className="figure">
               <img
-                src="https://raw.githubusercontent.com/NaveenPantra/card_ui_interaction/master/play.png"
-                className="play_btn_image"
-                alt="Play Button"
+                className="card-img-top"
+                src={project.image}
+                alt={project.title}
               />
-            </figcaption>
-          </figure>
-          <div className="description">
-            <div className="details_container">
-              <h5 className="card_title">{project.title}</h5>
-              <div className="game_details">
-                <div className="tools_section">
-                  <h6 className="tools_title">Tools Used</h6>
-                  <div className="tools_icons">
-                    {project.tools.map((tool, index) => (
-                      <img
-                        key={index}
-                        src={tool}
-                        alt="Tool Icon"
-                        className="tool_icon"
-                      />
-                    ))}
+              <div className="play_button_wrapperr">
+                <img
+                  src="https://raw.githubusercontent.com/NaveenPantra/card_ui_interaction/master/play.png"
+                  className="play_btn_image"
+                  alt="Play Button"
+                />
+              </div>
+            </figure>
+            <div className="description">
+              <div className="details_container">
+                <h2 className="text-center">{project.title}</h2>
+                <div className="game_detailss">
+                  <div className="tools_section">
+                    <h6 className="tools_title">&lt;tools used&gt;</h6>
+                    <div className="tools_icons">
+                      {project.tools.map((tool, index) => (
+                        <img
+                          key={index}
+                          src={tool}
+                          alt="Tool Icon"
+                          className="tool_icon"
+                        />
+                      ))}
+                    </div>
                   </div>
-                </div>
-                <div className="button_section">
-                  <a
-                    href={project.codeRepo}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="btn btn-primary"
-                  >
-                    Code Repo
-                  </a>
-                  {project.releaseRepo && (
+                  <div className="button_section">
                     <a
-                      href={project.releaseRepo}
+                      href={project.codeRepo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="btn btn-secondary"
+                      className="btn btn-primary"
                     >
-                      Release Repo
+                      Code Repo
                     </a>
-                  )}
+                    {project.releaseRepo && (
+                      <a
+                        href={project.releaseRepo}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="btn btn-secondary"
+                      >
+                        Release Repo
+                      </a>
+                    )}
+                  </div>
                 </div>
               </div>
             </div>
