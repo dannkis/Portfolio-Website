@@ -5,7 +5,7 @@ import BlinkingNavLink from "./BlinkingNavLink";
 
 const NavigationBar = () => {
   const [lastVisPos, setLastVisPos] = useState(0);
-  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset)
+  const [prevScrollPos, setPrevScrollPos] = useState(window.pageYOffset);
   const [visible, setVisible] = useState(true);
   const [expanded, setExpanded] = useState(false);
 
@@ -16,17 +16,15 @@ const NavigationBar = () => {
   useEffect(() => {
     const handleScroll = () => {
       const currentScrollPos = window.pageYOffset;
-      if(prevScrollPos >= currentScrollPos){
-        setVisible(true)
-        setLastVisPos(currentScrollPos)
-      }
-      else if(currentScrollPos >= lastVisPos + 360){
-        setVisible(false)
-        setLastVisPos(currentScrollPos)
+      if (prevScrollPos >= currentScrollPos) {
+        setVisible(true);
+        setLastVisPos(currentScrollPos);
+      } else if (currentScrollPos >= lastVisPos + 360) {
+        setVisible(false);
+        setLastVisPos(currentScrollPos);
       }
 
       setPrevScrollPos(currentScrollPos);
-      
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -39,7 +37,6 @@ const NavigationBar = () => {
   return (
     <Navbar
       expanded={expanded}
-      bg="dark"
       expand="lg"
       className={`row z-2 ${visible ? "navbar-visible" : "navbar-hidden"}`}
       sticky="top"
@@ -49,7 +46,7 @@ const NavigationBar = () => {
         aria-controls="basic-navbar-nav"
       />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mx-auto space-evenly w-100 d-flex justify-content-between align-items-center px-5">
+        <Nav className="mx-auto space-evenly w-100 d-flex justify-content-between align-items-center px-5 bg-white rounded-3 shadow">
           <BlinkingNavLink onClick={handleCollapse} to="scroll-here-intro">
             about
           </BlinkingNavLink>

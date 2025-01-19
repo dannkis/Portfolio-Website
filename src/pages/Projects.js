@@ -76,60 +76,44 @@ export default function Projects() {
       </div>
 
       {projectData.map((project) => (
-        <div className="col-xs-12 col-md-6 col-xl-3">
-          <div key={project.id} className="card bg-secondary border-none">
+        <div className="col-xs-12 col-md-4 col-xl-4 col-xxl-2 d-flex justify-content-center">
+          <div key={project.id} className="card project-card bg-secondary">
             <figure className="figure">
               <img
                 className="card-img-top"
                 src={project.image}
                 alt={project.title}
               />
-              <div className="play_button_wrapperr">
-                <img
-                  src="https://raw.githubusercontent.com/NaveenPantra/card_ui_interaction/master/play.png"
-                  className="play_btn_image"
-                  alt="Play Button"
-                />
-              </div>
+              <a className="btn_image btn btn-primary" alt="Image Button">
+                view
+              </a>
             </figure>
-            <div className="description">
-              <div className="details_container">
-                <h2 className="text-center">{project.title}</h2>
-                <div className="game_detailss">
-                  <div className="tools_section">
-                    <h6 className="tools_title">&lt;tools used&gt;</h6>
-                    <div className="tools_icons">
-                      {project.tools.map((tool, index) => (
-                        <img
-                          key={index}
-                          src={tool}
-                          alt="Tool Icon"
-                          className="tool_icon"
-                        />
-                      ))}
+            <div className="card-body">
+              <h2 className="card-title text-center">{project.title}</h2>
+              <h6 className="card-text text-center">&lt;tools used&gt;</h6>
+              <div className="card-body container-fluid">
+                <div className="row justify-content-evenly">
+                  {project.tools.map((tool, index) => (
+                    <div className="col-sm-2">
+                      <img
+                        key={index}
+                        src={tool}
+                        alt="Tool Icon"
+                        className="img-fluid tool-icon"
+                      />
                     </div>
-                  </div>
-                  <div className="button_section">
-                    <a
-                      href={project.codeRepo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="btn btn-primary"
-                    >
-                      Code Repo
-                    </a>
-                    {project.releaseRepo && (
-                      <a
-                        href={project.releaseRepo}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="btn btn-secondary"
-                      >
-                        Release Repo
-                      </a>
-                    )}
-                  </div>
+                  ))}
                 </div>
+              </div>
+              <div className="card-body">
+                <a href={project.codeRepo} className="btn btn-primary">
+                  Code Repo
+                </a>
+                {project.releaseRepo && (
+                  <a href={project.releaseRepo} className="btn btn-secondary">
+                    Release Repo
+                  </a>
+                )}
               </div>
             </div>
           </div>

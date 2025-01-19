@@ -1,8 +1,9 @@
-$primary: #FFC300;
-$secondary: #FC9C1C;
-$success: #F87537;
+$primary: #ffc300;
+$secondary: #fc9c1c;
+$success: #f87537;
 $dark: #171b27;
-$body-bg: #171b27;
+$light: #efefef;
+$border-radius-lg: 2em;
 
-$dropdown-bg:#FC9C1C;
-@import '~bootstrap/scss/bootstrap.scss';
+$dropdown-bg: #fc9c1c;
+@import "~bootstrap/scss/bootstrap.scss";

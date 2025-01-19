@@ -14,11 +14,16 @@ html {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #ffc300;
+  background-color: #ffc300;
+
+  &:hover {
+    background-color: #8e6d00;
+    cursor: pointer;
+  }
 }
 
 ::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
+  background: #efefef;
 }
 
 p {
@@ -29,16 +34,8 @@ p {
   text-align: justify;
 }
 
-.pr-0 {
-  padding-left: 0em !important;
-}
-
 .navbar-toggler {
   background-color: #f87537 !important;
-}
-
-.row {
-  padding: 1em 0;
 }
 
 .reveal {
@@ -51,7 +48,11 @@ p {
   }
 }
 
-.max-h-2em {
+.card {
+  border: none !important;
+}
+
+.rounded-big .max-h-2em {
   max-height: 2em;
 }
 

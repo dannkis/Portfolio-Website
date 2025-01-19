@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link as ScrollLink } from "react-scroll";
-import { Navbar, Nav, NavDropdown } from "react-bootstrap";
+import { Nav } from "react-bootstrap";
 
 const BlinkingNavLink = ({ to, children, onClick, ...rest }) => {
   const [isActive, setIsActive] = useState(false);
@@ -14,7 +14,7 @@ const BlinkingNavLink = ({ to, children, onClick, ...rest }) => {
         smooth={true}
         duration={0}
         activeClass="active"
-        className={`nav-link`}
+        className="nav-link text-dark"
         onSetActive={() => setIsActive(true)}
         onSetInactive={() => setIsActive(false)}
       >

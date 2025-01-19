@@ -14,7 +14,7 @@ import { Helmet } from "react-helmet";
 function App() {
   return (
     <Router>
-      <div className="container-fluid">
+      <div className="container-fluid bg-light">
         <NavigationBar />
         <Intro />
         <Skills />

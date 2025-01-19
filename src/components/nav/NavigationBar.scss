@@ -3,8 +3,6 @@ nav {
   font-weight: bold;
 
   .nav-link {
-    color: #fc9c1c !important;
-
     &:hover {
       color: #ffc300;
       text-shadow: 0 0 5px #a35f00;
@@ -25,7 +23,7 @@ nav {
   }
 }
 
-.hide{
+.hide {
   opacity: 0%;
 }
 
@@ -75,6 +73,5 @@ nav {
 
 .contactInfo ul li .linkStyle {
   text-decoration: none;
-  color: #333;
   font-size: smaller;
 }
