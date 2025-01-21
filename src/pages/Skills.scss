@@ -55,3 +55,22 @@
     }
   }
 }
+
+.laser-line {
+  height: 50%;
+  width: 1em;
+  background-color: red;
+  position: absolute;
+  top: 25%;
+  left: 0;
+  animation: laser-left-right 2s ease infinite;
+}
+
+@keyframes laser-left-right {
+  from {
+    left: 0; /* Start at the beginning */
+  }
+  to {
+    left: 100%; /* Move to the end of the parent */
+  }
+}
