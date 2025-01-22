@@ -56,21 +56,55 @@
   }
 }
 
-.laser-line {
+.laser-line-vertical {
+  height: 1em;
+  width: 50%;
+  bottom: -10%;
+  left: 25%;
+}
+
+.laser-line-horizontal {
   height: 50%;
   width: 1em;
-  background-color: red;
-  position: absolute;
   top: 25%;
-  left: 0;
-  animation: laser-left-right 2s ease infinite;
+  left: -15%;
+}
+
+.animate-laser-line-top {
+  animation: laser-bottom-top 1s ease infinite;
+}
+
+.animate-laser-line-right {
+  animation: laser-left-right 1s ease infinite;
+}
+
+.animate-laser-line-bottom {
+  animation: laser-top-bottom 1s ease infinite;
 }
 
 @keyframes laser-left-right {
   from {
-    left: 0; /* Start at the beginning */
+    left: -15%;
   }
   to {
-    left: 100%; /* Move to the end of the parent */
+    left: 100%;
+  }
+}
+
+@keyframes laser-bottom-top {
+  from {
+    bottom: -10%;
+  }
+  to {
+    bottom: 90%;
+  }
+}
+
+@keyframes laser-top-bottom {
+  from {
+    top: 0%;
+  }
+  to {
+    top: 100%;
   }
 }

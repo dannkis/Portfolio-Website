@@ -1,7 +1,6 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Carousel from "../components/carousel/Carousel.js";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import "./Skills.scss";
 import CircuitBoard from "../components/skills/CircuitBoard.js";
 
 export default function Skills() {
