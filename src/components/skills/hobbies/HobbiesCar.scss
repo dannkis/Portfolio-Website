@@ -5,17 +5,11 @@
   width: 100%;
   min-height: 30em;
   background: linear-gradient($primary, $secondary);
+  overflow: hidden;
 }
 
 .cloud-container {
   min-height: 15em;
-}
-
-.cloud-image {
-  max-height: 8em;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
 }
 
 .road {
@@ -25,14 +19,14 @@
 
 .car {
   position: relative;
-  width: 12em;
+  width: 16em;
   height: 5em;
   background: $success;
 
   .wheel {
     position: absolute;
     bottom: -2em;
-    animation: spin 2s linear infinite;
+    animation: spin 3s linear infinite;
 
     &.left {
       left: 1em;
@@ -50,5 +44,39 @@
   }
   to {
     transform: rotate(360deg);
+  }
+}
+
+// SLIDER
+
+.slider {
+  animation: slidein 2s linear infinite;
+  white-space: nowrap;
+  .clouds {
+    width: 100%;
+    .cloud {
+      max-height: 12em;
+      padding: 0 2em;
+      width: calc(200% / 8);
+      animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+    }
+  }
+}
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

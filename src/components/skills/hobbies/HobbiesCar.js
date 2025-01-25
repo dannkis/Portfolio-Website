@@ -13,36 +13,42 @@ export default function HobbiesCar() {
     { src: CloudTwo, text: "TEXT 2", className: "" },
     { src: CloudThree, text: "TEXT 3", className: "mt-4" },
     { src: CloudFour, text: "TEXT 4", className: "mb-5" },
+    { src: CloudOne, text: "TEXT 5", className: "mt-4" },
+    { src: CloudTwo, text: "TEXT 6", className: "" },
+    { src: CloudThree, text: "TEXT 7", className: "mt-4" },
+    { src: CloudFour, text: "TEXT 8", className: "mb-5" },
   ];
 
   return (
     <Row className="py-3">
       <Col>
-        <Card className="bg-primary rounded-3 shadow">
+        <Card className="bg-primary rounded-3 shadow overflow-hidden">
           <Card.Body>
             <Card.Title className="text-center">hobbies</Card.Title>
           </Card.Body>
           <Card.Body className="overflow-hidden p-0">
             <Container
               fluid
-              className="scene d-flex flex-column justify-content-end rounded-5"
+              className="scene d-flex flex-column justify-content-end "
             >
-              <Row className="clouds mb-auto">
-                {clouds.map((cloud, index) => (
-                  <Col key={index} className={cloud.className}>
-                    <div className="cloud-container d-flex justify-content-center align-items-center position-relative">
-                      <img
-                        src={cloud.src}
-                        alt={`Cloud ${index + 1}`}
-                        className="img-fluid cloud-image position-absolute"
-                      />
-                      <div className="cloud-text z-2">{cloud.text}</div>
+              <Row className="mb-auto flex-grow-1 align-items-start">
+                <Col>
+                  <div className="slider position-relative">
+                    <div className="clouds ">
+                      {clouds.map((cloud, index) => (
+                        <img
+                          src={cloud.src}
+                          alt={`Cloud ${index + 1}`}
+                          className={"img-fluid cloud " + cloud.className}
+                          key={index}
+                        />
+                      ))}
                     </div>
-                  </Col>
-                ))}
+                  </div>
+                </Col>
               </Row>
 
-              <Row className="h-100">
+              <Row className="mt-5">
                 <Col className="d-flex justify-content-center">
                   <div className="car rounded-5 border border-4 border-dark d-flex justify-content-center align-items-center">
                     <h6>a_cool_car</h6>
