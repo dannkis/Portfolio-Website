@@ -9,14 +9,14 @@ import CloudFour from "../../../images/skills/clouds/cloud4.svg";
 
 export default function HobbiesCar() {
   const clouds = [
-    { src: CloudOne, text: "TEXT 1", className: "mt-4" },
-    { src: CloudTwo, text: "TEXT 2", className: "" },
-    { src: CloudThree, text: "TEXT 3", className: "mt-4" },
-    { src: CloudFour, text: "TEXT 4", className: "mb-5" },
-    { src: CloudOne, text: "TEXT 5", className: "mt-4" },
-    { src: CloudTwo, text: "TEXT 6", className: "" },
-    { src: CloudThree, text: "TEXT 7", className: "mt-4" },
-    { src: CloudFour, text: "TEXT 8", className: "mb-5" },
+    { src: CloudOne, text: "gaming", className: "mt-4" },
+    { src: CloudTwo, text: "design", className: "" },
+    { src: CloudThree, text: "running", className: "mt-4" },
+    { src: CloudFour, text: "photography", className: "mb-5" },
+    { src: CloudOne, text: "coding", className: "mt-4" },
+    { src: CloudTwo, text: "podcasts", className: "" },
+    { src: CloudThree, text: "drawing", className: "mt-4" },
+    { src: CloudFour, text: "music", className: "mb-5" },
   ];
 
   return (
@@ -33,15 +33,32 @@ export default function HobbiesCar() {
             >
               <Row className="mb-auto flex-grow-1 align-items-start">
                 <Col>
-                  <div className="slider position-relative">
-                    <div className="clouds ">
+                  <div className="slider">
+                    <div className="clouds">
                       {clouds.map((cloud, index) => (
-                        <img
-                          src={cloud.src}
-                          alt={`Cloud ${index + 1}`}
-                          className={"img-fluid cloud " + cloud.className}
-                          key={index}
-                        />
+                        <div key={index} className={"cloud " + cloud.className}>
+                          <img
+                            src={cloud.src}
+                            alt={`Cloud ${index + 1}`}
+                            className="img-fluid"
+                          />
+                          <h4 className="cloud-text">{cloud.text}</h4>
+                        </div>
+                      ))}
+                    </div>
+                    <div className="clouds">
+                      {clouds.map((cloud, index) => (
+                        <div
+                          key={`repeat-${index}`}
+                          className={"cloud " + cloud.className}
+                        >
+                          <img
+                            src={cloud.src}
+                            alt={`Cloud ${index + 1}`}
+                            className="img-fluid"
+                          />
+                          <h4 className="cloud-text">{cloud.text}</h4>
+                        </div>
                       ))}
                     </div>
                   </div>
