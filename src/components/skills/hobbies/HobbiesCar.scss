@@ -1,0 +1,54 @@
+@import "../../../variables.scss";
+
+.scene {
+  position: relative;
+  width: 100%;
+  min-height: 30em;
+  background: linear-gradient($primary, $secondary);
+}
+
+.cloud-container {
+  min-height: 15em;
+}
+
+.cloud-image {
+  max-height: 8em;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.road {
+  height: 2em;
+  background: $dark;
+}
+
+.car {
+  position: relative;
+  width: 12em;
+  height: 5em;
+  background: $success;
+
+  .wheel {
+    position: absolute;
+    bottom: -2em;
+    animation: spin 2s linear infinite;
+
+    &.left {
+      left: 1em;
+    }
+
+    &.right {
+      right: 1em;
+    }
+  }
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}

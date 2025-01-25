@@ -6,6 +6,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: #efefef;
 }
 
 ::-webkit-scrollbar {
@@ -15,7 +16,7 @@ html {
 
 ::-webkit-scrollbar-thumb {
   background-color: #ffc300;
-
+  border-radius: 2em;
   &:hover {
     background-color: #8e6d00;
     cursor: pointer;
@@ -64,4 +65,8 @@ p {
 
 .blink {
   animation: blink-animation 0.8s linear infinite;
+}
+
+.scale-1 {
+  transform: scale(1.2);
 }

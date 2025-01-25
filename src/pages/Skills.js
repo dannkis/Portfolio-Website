@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
-import Carousel from "../components/carousel/Carousel.js";
+import Carousel from "../components/skills/carousel/Carousel.js";
 import { Container, Row, Col, Card } from "react-bootstrap";
-import CircuitBoard from "../components/skills/CircuitBoard.js";
+import CircuitBoard from "../components/skills/circuit_board/CircuitBoard.js";
+import HobbiesCar from "../components/skills/hobbies/HobbiesCar.js";
 
 export default function Skills() {
   return (
@@ -15,16 +16,8 @@ export default function Skills() {
           <h1 className="text-center">skills</h1>
         </Col>
       </Row>
-      <Row className="py-3">
-        <Col>
-          <Card className="bg-primary rounded-3 shadow">
-            <Card.Body>
-              <Card.Title className="text-center">Version Control</Card.Title>
-            </Card.Body>
-          </Card>
-        </Col>
-      </Row>
-      <Row className="py-2">
+      <HobbiesCar />
+      <Row>
         <Col sm={12} lg={4} className="">
           <Card className="bg-secondary rounded-3 shadow">
             <Card.Body>
@@ -52,7 +45,7 @@ export default function Skills() {
                 ]}
                 ROWS={2}
                 TAGS_PER_ROW={5}
-                DURATION={30000}
+                DURATION={20000}
               />
             </Card.Body>
           </Card>
@@ -89,7 +82,7 @@ export default function Skills() {
                 TAGS={["vs", "github", "vscode", "figma", "access", "netbeans"]}
                 ROWS={2}
                 TAGS_PER_ROW={5}
-                DURATION={30000}
+                DURATION={20000}
               />
             </Card.Body>
           </Card>

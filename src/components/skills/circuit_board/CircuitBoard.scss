@@ -3,6 +3,7 @@
   z-index: 1;
   position: absolute;
   transition: all 0.1s ease;
+  cursor: pointer;
 
   &.big {
     width: 2em;
@@ -49,10 +50,7 @@
   }
   &.vertical {
     width: 1em;
-    height: 8em;
-    &.left {
-      left: 0em;
-    }
+    height: 12em;
   }
 }
 
@@ -71,15 +69,15 @@
 }
 
 .animate-laser-line-top {
-  animation: laser-bottom-top 1s ease infinite;
+  animation: laser-bottom-top 0.6s ease infinite;
 }
 
 .animate-laser-line-right {
-  animation: laser-left-right 1s ease infinite;
+  animation: laser-left-right 0.6s ease infinite;
 }
 
 .animate-laser-line-bottom {
-  animation: laser-top-bottom 1s ease infinite;
+  animation: laser-top-bottom 0.6s ease infinite;
 }
 
 @keyframes laser-left-right {
@@ -106,5 +104,35 @@
   }
   to {
     top: 100%;
+  }
+}
+
+.skills-hover {
+  height: 2em;
+  transition: height 0.3s ease;
+
+  .skills-hover-text {
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s linear;
+  }
+  &:hover {
+    height: 100%;
+    transition: height 0.5s ease;
+
+    .skills-hover-text {
+      visibility: visible;
+      opacity: 1;
+      transition: visibility 0s, opacity 0.5s linear;
+    }
+  }
+}
+
+.skills-hover {
+  font-size: 0.8vw;
+}
+@media (min-width: 1550px) {
+  .skills-hover {
+    font-size: 12pt;
   }
 }
