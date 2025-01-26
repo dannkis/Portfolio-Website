@@ -28,11 +28,12 @@ html {
 }
 
 p {
-  font-size: 18pt;
+  font-size: 14pt;
 }
 
 .text-justify {
   text-align: justify;
+  text-justify: inter-word;
 }
 
 .navbar-toggler {

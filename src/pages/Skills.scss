@@ -1,0 +1,7 @@
+@import "~bootstrap/scss/bootstrap";
+
+@include media-breakpoint-between(0, xl) {
+  .card-my-md-1 {
+    margin-bottom: 1rem;
+  }
+}

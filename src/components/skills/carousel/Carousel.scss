@@ -1,5 +1,5 @@
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   background: #1e293b;
   color: #f8fafc;
 }
@@ -13,23 +13,23 @@ body {
   flex-direction: column;
 }
 
-header { 
+header {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 1rem;
   text-align: center;
-  
+
   h1 {
     font-weight: 600;
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    
+
     @media (min-width: 768px) {
       font-size: 3rem;
     }
   }
-  
+
   p {
     color: #94a3b8;
   }
@@ -61,29 +61,17 @@ header {
 
 .tag {
   display: flex;
+  white-space: nowrap;
   align-items: center;
   gap: 0 0.2rem;
   font-size: 1.2rem;
-  background-color: #FFC300;
   border-radius: 0.4rem;
   padding: 0.7rem 1rem;
   margin-right: 1rem; // Must used margin-right instead of gap for the loop to be smooth
-  box-shadow: 
-    0 0.1rem 0.2rem rgb(0 0 0 / 20%),
-    0 0.1rem 0.5rem rgb(0 0 0 / 30%),
-    0 0.2rem 1.5rem rgb(0 0 0 / 40%);
-  
   span {
     font-size: 1.2rem;
-    color: #F87537;
+    color: #f87537;
   }
-}
-
-.fade {
-  pointer-events: none;
-  background: linear-gradient(90deg, #1e293b, transparent 30%, transparent 70%, #1e293b);
-  position: absolute;
-  inset: 0;
 }
 
 @keyframes loop {

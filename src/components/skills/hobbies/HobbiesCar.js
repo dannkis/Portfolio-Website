@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import "./HobbiesCar.scss";
 import CarWheel from "../../../images/skills/car_wheel.svg";
@@ -8,19 +8,63 @@ import CloudThree from "../../../images/skills/clouds/cloud3.svg";
 import CloudFour from "../../../images/skills/clouds/cloud4.svg";
 
 export default function HobbiesCar() {
+  const [translateY, setTranslateY] = useState(false);
   const clouds = [
-    { src: CloudOne, text: "gaming", className: "mt-4" },
-    { src: CloudTwo, text: "design", className: "" },
-    { src: CloudThree, text: "running", className: "mt-4" },
-    { src: CloudFour, text: "photography", className: "mb-5" },
-    { src: CloudOne, text: "coding", className: "mt-4" },
-    { src: CloudTwo, text: "podcasts", className: "" },
-    { src: CloudThree, text: "drawing", className: "mt-4" },
-    { src: CloudFour, text: "music", className: "mb-5" },
+    {
+      src: CloudOne,
+      text: "gaming",
+      classNameCloud: "mt-4",
+      classNameText: "mt-3",
+    },
+    {
+      src: CloudTwo,
+      text: "design",
+      classNameCloud: "mb-5",
+      classNameText: "mt-1",
+    },
+    {
+      src: CloudThree,
+      text: "running",
+      classNameCloud: "mt-4",
+      classNameText: "mt-2",
+    },
+    {
+      src: CloudFour,
+      text: "photography",
+      classNameCloud: "mb-5",
+      classNameText: "mt-3",
+    },
+    {
+      src: CloudOne,
+      text: "coding",
+      classNameCloud: "mt-4",
+      classNameText: "mt-2",
+    },
+    {
+      src: CloudTwo,
+      text: "podcasts",
+      classNameCloud: "mb-5",
+      classNameText: "mt-2",
+    },
+    {
+      src: CloudThree,
+      text: "drawing",
+      classNameCloud: "mt-4",
+      classNameText: "mt-2",
+    },
+    {
+      src: CloudFour,
+      text: "music",
+      classNameCloud: "mb-5",
+      classNameText: "mt-2",
+    },
   ];
+  const handleTranslateClouds = () => {
+    setTranslateY(!translateY);
+  };
 
   return (
-    <Row className="py-3">
+    <Row className="py-3 d-none d-md-block">
       <Col>
         <Card className="bg-primary rounded-3 shadow overflow-hidden">
           <Card.Body>
@@ -33,16 +77,28 @@ export default function HobbiesCar() {
             >
               <Row className="mb-auto flex-grow-1 align-items-start">
                 <Col>
-                  <div className="slider">
+                  <div className="slider my-2">
                     <div className="clouds">
                       {clouds.map((cloud, index) => (
-                        <div key={index} className={"cloud " + cloud.className}>
+                        <div
+                          key={index}
+                          onClick={handleTranslateClouds}
+                          className={"cloud " + cloud.classNameCloud}
+                          style={{
+                            transform: translateY
+                              ? "translateY(-200px)"
+                              : "translateY(0)",
+                            transition: "transform 0.5s ease",
+                          }}
+                        >
                           <img
                             src={cloud.src}
                             alt={`Cloud ${index + 1}`}
                             className="img-fluid"
                           />
-                          <h4 className="cloud-text">{cloud.text}</h4>
+                          <h6 className={`cloud-text ` + cloud.classNameText}>
+                            {cloud.text}
+                          </h6>
                         </div>
                       ))}
                     </div>
@@ -50,14 +106,22 @@ export default function HobbiesCar() {
                       {clouds.map((cloud, index) => (
                         <div
                           key={`repeat-${index}`}
-                          className={"cloud " + cloud.className}
+                          className={"cloud " + cloud.classNameCloud}
+                          style={{
+                            transform: translateY
+                              ? "translateY(200px)"
+                              : "translateY(0)",
+                            transition: "transform 0.5s ease",
+                          }}
                         >
                           <img
                             src={cloud.src}
                             alt={`Cloud ${index + 1}`}
                             className="img-fluid"
                           />
-                          <h4 className="cloud-text">{cloud.text}</h4>
+                          <h6 className={`cloud-text ` + cloud.classNameText}>
+                            {cloud.text}
+                          </h6>
                         </div>
                       ))}
                     </div>
