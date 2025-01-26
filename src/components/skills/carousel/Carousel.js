@@ -24,7 +24,7 @@ const InfiniteLoopSlider = ({ children, duration, reverse = false }) => {
 
 const Tag = ({ tag_symbol, text, color, text_color }) => (
   <div
-    className={"tag shadow non_selectable " + text_color}
+    className={"tag shadow non_selectable scale-1 " + text_color}
     style={{ backgroundColor: color }}
   >
     <span>{tag_symbol}</span> {text}

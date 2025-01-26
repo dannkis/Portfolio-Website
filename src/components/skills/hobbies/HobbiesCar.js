@@ -101,8 +101,7 @@ export default function HobbiesCar() {
             >
               <Row className="mb-auto flex-grow-1 align-items-start">
                 <Col>
-                  <div className="slider my-2">
-                    {/* Original Clouds */}
+                  <div className="slider my-4">
                     <div className="clouds">
                       {clouds.map((cloud, index) => (
                         <div
@@ -114,7 +113,7 @@ export default function HobbiesCar() {
                             src={cloud.src}
                             draggable={false}
                             alt={`Cloud ${index + 1}`}
-                            className="img-fluid"
+                            className="img-fluid img-shadow"
                           />
                           <h6 className={`cloud-text ${cloud.classNameText}`}>
                             {cloud.text}
@@ -122,7 +121,6 @@ export default function HobbiesCar() {
                         </div>
                       ))}
                     </div>
-                    {/* Copy of Clouds */}
                     <div className="clouds">
                       {clouds.map((cloud, index) => (
                         <div
@@ -134,7 +132,7 @@ export default function HobbiesCar() {
                             src={cloud.src}
                             draggable={false}
                             alt={`Cloud Copy ${index + 1}`}
-                            className="img-fluid"
+                            className="img-fluid img-shadow"
                           />
                           <h6 className={`cloud-text ${cloud.classNameText}`}>
                             {cloud.text}
@@ -148,7 +146,7 @@ export default function HobbiesCar() {
 
               <Row className="mt-5">
                 <Col className="d-flex justify-content-center">
-                  <div className="car rounded-5 border border-4 border-dark d-flex justify-content-center align-items-center">
+                  <div className="car rounded-5 shadow d-flex justify-content-center align-items-center">
                     <h6 className="non_selectable">a_cool_car</h6>
                     <div className="wheel left border border-primary border-4 rounded-circle">
                       <img
