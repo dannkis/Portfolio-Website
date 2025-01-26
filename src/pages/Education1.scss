@@ -1,0 +1,23 @@
+@media screen and (max-width: 991px) {
+  /* For screens smaller than 768px */
+
+  .educationAndCertificates {
+    :not(.limiter) > article {
+      flex-basis: 50vh;
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  /* For screens smaller than 768px */
+
+  .educationAndCertificates {
+    :not(.limiter) > article {
+      flex-basis: 0px;
+      flex-grow: 1;
+      overflow-y: auto;
+    }
+  }
+}
