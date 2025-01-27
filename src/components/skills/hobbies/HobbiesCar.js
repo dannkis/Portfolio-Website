@@ -88,7 +88,7 @@ export default function HobbiesCar() {
   ];
 
   return (
-    <Row className="py-3 d-none d-md-block">
+    <Row className="py-3 d-none d-xl-block">
       <Col>
         <Card className="bg-primary rounded-3 shadow overflow-hidden">
           <Card.Body>
