@@ -5,6 +5,10 @@
 
 .card-certificate {
   min-height: 20em;
+
+  &:hover {
+    z-index: 2;
+  }
 }
 
 //MODAL

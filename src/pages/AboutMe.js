@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Figure } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import "./AboutMe.scss";
-import portraitImage from "../images/portraitImage2-cr2.JPG";
+import portraitImage from "../images/portraitImage.JPG";
 import portraitImageBackground from "../images/blob.svg";
 
 export default function AboutMe() {

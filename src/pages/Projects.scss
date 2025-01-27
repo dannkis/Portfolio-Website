@@ -1,90 +1,41 @@
-.logo {
-  max-width: 7em;
-}
+.project-card {
+  .card-hover-content {
+    transition: all 0.3s ease;
 
-.project-img {
-  filter: grayscale(100%);
-  transition: 0.5s;
-  &:hover {
-    filter: none;
+    img {
+      transition: filter 0.3s ease;
+      position: relative;
+    }
+
+    .hover-overlay {
+      top: 0;
+      left: 0;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .hover-btn {
+      display: none;
+    }
   }
-}
 
-.github-section {
-  a {
-    color: #171b27;
-    transition: 0.5s;
+  &:hover {
+    z-index: 2;
+    .card-hover-content {
+      img {
+        filter: blur(4px);
+      }
+      .hover-overlay {
+        opacity: 1;
 
-    &:hover {
-      filter: brightness(85%);
-      font-size: larger;
+        .hover-btn {
+          display: block;
+        }
+      }
     }
   }
 }
-
-//ANIMATION
-
-html {
-  --transition-time-1: 0.5s;
-  --transition-time-2: 0.4s;
-  --transition-time-3: 0.3s;
-  --transition-ease-1: cubic-bezier(0.34, 1.56, 0.64, 1);
-  --scale-1: 1.4;
-  --scale-2: 2.1;
-  --scale-3: 2.5;
-  --scale-ineverse-1: 0.7;
-  --z-index-1: 1;
-  --z-index-2: 2;
-  --z-index-999: 999;
-}
-
-button {
-  border: none;
-  box-shadow: none;
-  background: transparent;
-  font-family: "Nunito", sans-serif;
-  cursor: pointer;
-  outline: none;
-  padding: 0;
-}
-
-.project-card {
-  transition: all var(--transition-time-1) var(--transition-ease-1);
-}
-
-.project-card:hover {
-  transform: scale(var(--scale-1));
-  z-index: var(--z-index-999);
-}
-
-.figure {
-  position: absolute;
-  z-index: var(--z-index-1);
-  transition: all var(--transition-time-2) var(--transition-ease-1);
-}
-
-.project-card:hover .figure {
-  transform: translateY(-10rem) scale(var(--scale-ineverse-1));
-}
-
-.btn_image {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, 0);
-}
-
-.project-card:hover .btn_image {
-  transform: translate(-50%, -300%) scale(var(--scale-2));
-  opacity: 1;
-  transition: all var(--transition-time-1) var(--transition-ease-1);
-}
-
-.tool_icon {
-  transition: transform 0.3s ease;
-}
-
-.tool_icon:hover {
-  transform: scale(1.2);
+.transition-theme {
+  transition: background-color 2s ease, color 2s ease;
 }

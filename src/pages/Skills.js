@@ -24,7 +24,7 @@ export default function Skills() {
           <Row>
             <Col
               sm={12}
-              lg={4}
+              xl={4}
               className="d-flex flex-column flex-grow-1 card-my-md-1"
             >
               <Card className="bg-secondary rounded-3 shadow h-100 justify-content-between ">
@@ -68,7 +68,7 @@ export default function Skills() {
               </Card>
             </Col>
 
-            <Col sm={12} lg={4} className="d-flex card-my-md-1">
+            <Col sm={12} xl={4} className="d-flex card-my-md-1">
               <Card className="bg-success rounded-3 shadow-sm h-100 d-flex justify-content-between">
                 <Card.Body>
                   <Card.Title className="text-center fw-bold">
@@ -106,7 +106,7 @@ export default function Skills() {
 
             <Col
               sm={12}
-              lg={4}
+              xl={4}
               className="d-flex flex-column flex-grow-1 card-my-md-1"
             >
               <Card className="bg-secondary rounded-3 shadow h-100 justify-content-between">

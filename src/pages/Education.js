@@ -127,7 +127,7 @@ export default function Education() {
                       items.push(
                         <Carousel.Item key={i} className="my-4">
                           <Container fluid>
-                            <Row className="justify-content-center">
+                            <Row className="justify-content-center p-4">
                               {certGroup.map((cert, idx) => (
                                 <Col
                                   xs={12}
@@ -136,7 +136,7 @@ export default function Education() {
                                   className="px-3 py-4"
                                 >
                                   <Card
-                                    className="rounded-5 shadow h-100 show-cursor card-certificate bg-secondary"
+                                    className="rounded-5 shadow h-100 show-cursor card-certificate bg-secondary scale-1"
                                     onClick={() =>
                                       openModal(cert.certificate, cert.name)
                                     }
