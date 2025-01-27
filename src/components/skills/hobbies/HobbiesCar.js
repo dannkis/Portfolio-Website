@@ -58,13 +58,13 @@ export default function HobbiesCar() {
     {
       src: CloudFour,
       text: "photography",
-      classNameCloud: "mb-5",
+      classNameCloud: "mb-3",
       classNameText: "mt-3",
     },
     {
       src: CloudOne,
       text: "coding",
-      classNameCloud: "mt-4",
+      classNameCloud: "mb-2",
       classNameText: "mt-2",
     },
     {
@@ -82,7 +82,7 @@ export default function HobbiesCar() {
     {
       src: CloudFour,
       text: "music",
-      classNameCloud: "mb-5",
+      classNameCloud: "mb-3",
       classNameText: "mt-2",
     },
   ];
@@ -101,8 +101,8 @@ export default function HobbiesCar() {
             >
               <Row className="mb-auto flex-grow-1 align-items-start">
                 <Col>
-                  <div className="slider my-4">
-                    <div className="clouds">
+                  <div className="slider my-4 d-flex justify-content-between">
+                    <div className="clouds d-flex justify-content-between">
                       {clouds.map((cloud, index) => (
                         <div
                           key={`original-${index}`}
@@ -121,7 +121,7 @@ export default function HobbiesCar() {
                         </div>
                       ))}
                     </div>
-                    <div className="clouds">
+                    <div className="clouds d-flex justify-content-between">
                       {clouds.map((cloud, index) => (
                         <div
                           key={`copy-${index}`}

@@ -117,22 +117,26 @@ export default function Education() {
                 xs={12}
                 lg={6}
                 className="d-flex justify-content-center align-items-center"
-                data-bs-theme="dark"
               >
-                <Carousel className="w-100">
+                <Carousel className="w-100" data-bs-theme="dark">
                   {(() => {
                     const items = [];
-                    for (let i = 0; i < certificates.length; i += 3) {
-                      const certGroup = certificates.slice(i, i + 3);
+                    for (let i = 0; i < certificates.length; i += 2) {
+                      const certGroup = certificates.slice(i, i + 2);
 
                       items.push(
                         <Carousel.Item key={i} className="my-4">
                           <Container fluid>
                             <Row className="justify-content-center">
                               {certGroup.map((cert, idx) => (
-                                <Col xs={4} key={idx} className="px-3 py-4">
+                                <Col
+                                  xs={12}
+                                  xxl={6}
+                                  key={idx}
+                                  className="px-3 py-4"
+                                >
                                   <Card
-                                    className="rounded-5 shadow h-100 show-cursor card-certificate"
+                                    className="rounded-5 shadow h-100 show-cursor card-certificate bg-secondary"
                                     onClick={() =>
                                       openModal(cert.certificate, cert.name)
                                     }
@@ -143,7 +147,7 @@ export default function Education() {
                                       src={cert.certificate}
                                       alt={cert.name}
                                     />
-                                    <Card.Body className="bg-secondary text-dark rounded-bottom-5">
+                                    <Card.Body className="text-dark">
                                       <Card.Title className="h-100 d-flex justify-content-center align-items-center text-center">
                                         {cert.name}
                                       </Card.Title>
