@@ -1,8 +1,62 @@
-$primary: #FFC300;
-$secondary: #FC9C1C;
-$success: #F87537;
-$dark: #171b27;
-$body-bg: #171b27;
+@import "./variables.scss";
+@import "~bootstrap/scss/bootstrap.scss";
 
-$dropdown-bg:#FC9C1C;
-@import '~bootstrap/scss/bootstrap.scss';
+:root {
+  --bs-primary: #{$primary};
+  --bs-secondary: #{$secondary};
+  --bs-success: #{$success};
+  --bs-dark: #{$dark};
+  --bs-light: #{$light};
+  --bs-body-bg: #{$light};
+  --bs-body-color: #{$dark};
+  --bs-dropdown-bg: #{$dropdown-bg};
+  --bs-shadow: #{$box-shadow};
+
+  --scrollbar-track-bg: #{$scrollbar-track-bg};
+}
+
+[data-bs-theme="dark"] {
+  --bs-primary: #{$primary};
+  --bs-secondary: #{$secondary};
+  --bs-success: #{$success};
+  --bs-dark: #{$light};
+  --bs-light: #{$dark};
+  --bs-body-bg: #{$body-bg};
+  --bs-body-color: #{$body-color};
+  --bs-dropdown-bg: #{$dropdown-bg};
+  --bs-shadow: 0 0.2rem 0.5rem rgba(239, 239, 239, 0.023);
+
+  --scrollbar-track-bg: #{$scrollbar-track-bg};
+}
+
+.bg-light {
+  background-color: var(--bs-light) !important;
+}
+
+.bg-dark {
+  background-color: var(--bs-dark) !important;
+}
+
+.text-light {
+  color: var(--bs-light) !important;
+}
+
+.text-dark {
+  color: var(--bs-dark) !important;
+}
+
+.shadow {
+  box-shadow: var(--bs-shadow) !important;
+}
+
+.nav-link {
+  color: var(--bs-dark);
+}
+
+@media (prefers-color-scheme: dark) {
+  ::-webkit-scrollbar-track {
+    background-color: var(--bs-light);
+  }
+}
+
+@import "./dark-variables.scss";

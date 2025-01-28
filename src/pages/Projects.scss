@@ -1,23 +1,18 @@
-.logo {
-  max-width: 7em;
-}
-
-.project-img {
-  filter: grayscale(100%);
-  transition: 0.5s;
-  &:hover {
-    filter: none;
+.project-card {
+  .description-overlay {
+    z-index: 3;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: height 0.2s ease;
   }
-}
 
-.github-section {
-  a {
-    color: #171b27;
-    transition: 0.5s;
-
-    &:hover {
-      filter: brightness(85%);
-      font-size: larger;
+  &:hover {
+    z-index: 2;
+    .description-overlay {
+      height: 100%;
+    }
+    .blur-on-hover {
+      filter: blur(20px);
     }
   }
 }

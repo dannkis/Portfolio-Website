@@ -1,23 +1,71 @@
-@media screen and (max-width: 991px) {
-  /* For screens smaller than 768px */
+.card-img-max-h-1 {
+  max-height: 12em;
+  object-fit: cover;
+}
 
-  .educationAndCertificates {
-    :not(.limiter) > article {
-      flex-basis: 50vh;
-      flex-grow: 1;
-      overflow-y: auto;
-    }
+.card-certificate {
+  min-height: 20em;
+
+  &:hover {
+    z-index: 2;
   }
 }
 
-@media screen and (min-width: 992px) {
-  /* For screens smaller than 768px */
+//MODAL
 
-  .educationAndCertificates {
-    :not(.limiter) > article {
-      flex-basis: 0px;
-      flex-grow: 1;
-      overflow-y: auto;
-    }
+.custom-modal {
+  position: fixed;
+  z-index: 5;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.custom-modal-content {
+  object-fit: contain;
+  max-width: 50%;
+  max-height: 80%;
+}
+
+#caption {
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.custom-modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.1);
   }
+  to {
+    transform: scale(1);
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
 }
