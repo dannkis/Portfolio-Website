@@ -8,18 +8,16 @@
 }
 
 @media screen and (max-width: 768px) {
-  /* For screens smaller than 768px */
   .nameText1 {
-    font-size: 30pt;
+    font-size: 25pt;
   }
 
   .nameText2 {
-    font-size: 20pt;
+    font-size: 15pt;
   }
 }
 
 @media screen and (min-width: 769px) {
-  /* For screens wider than 1024px */
   .nameText1 {
     font-size: 4vw;
   }
@@ -31,7 +29,6 @@
 
 #aboutMeSection {
   background-color: #ffc300;
-  height: 400px;
 }
 
 @keyframes gradient {

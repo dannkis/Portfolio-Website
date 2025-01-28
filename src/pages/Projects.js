@@ -20,6 +20,8 @@ export default function Projects() {
       id: 1,
       title: "Rota Maker 4",
       image: RotaMaker,
+      description:
+        "A scheduling tool for the hospitality sector, simplifying rota creation, sharing, and employee data management.",
       tools: [cSharpLogo, msAccessLogo, dotNetLogo, vsCodeLogo],
       codeRepo: "https://github.com/dannkis/RotaMaker-4",
       releaseRepo: "https://github.com/dannkis/RotaMaker-4-RELEASE",
@@ -28,6 +30,8 @@ export default function Projects() {
       id: 2,
       title: "Agronova",
       image: WeatherApp,
+      description:
+        "A weather web app for farmers, offering real-time data, forecasts, and crop-specific recommendations.",
       tools: [reactLogo, bootstrapLogo, sassLogo, figmaLogo],
       codeRepo: "https://github.com/dannkis/GUI-Weather-App-Concept",
       releaseRepo: null,
@@ -36,54 +40,8 @@ export default function Projects() {
       id: 3,
       title: "CryptiQ",
       image: CryptoWalletApp,
-      tools: [reactLogo, bootstrapLogo, sassLogo, figmaLogo],
-      codeRepo: "https://github.com/dannkis/Crypto-Wallet-App-Concept",
-      releaseRepo: null,
-    },
-    {
-      id: 4,
-      title: "Rota Maker 4",
-      image: RotaMaker,
-      tools: [cSharpLogo, msAccessLogo, dotNetLogo, vsCodeLogo],
-      codeRepo: "https://github.com/dannkis/RotaMaker-4",
-      releaseRepo: "https://github.com/dannkis/RotaMaker-4-RELEASE",
-    },
-    {
-      id: 5,
-      title: "Agronova",
-      image: WeatherApp,
-      tools: [reactLogo, bootstrapLogo, sassLogo, figmaLogo],
-      codeRepo: "https://github.com/dannkis/GUI-Weather-App-Concept",
-      releaseRepo: null,
-    },
-    {
-      id: 6,
-      title: "CryptiQ",
-      image: CryptoWalletApp,
-      tools: [reactLogo, bootstrapLogo, sassLogo, figmaLogo],
-      codeRepo: "https://github.com/dannkis/Crypto-Wallet-App-Concept",
-      releaseRepo: null,
-    },
-    {
-      id: 7,
-      title: "Rota Maker 4",
-      image: RotaMaker,
-      tools: [cSharpLogo, msAccessLogo, dotNetLogo, vsCodeLogo],
-      codeRepo: "https://github.com/dannkis/RotaMaker-4",
-      releaseRepo: "https://github.com/dannkis/RotaMaker-4-RELEASE",
-    },
-    {
-      id: 8,
-      title: "Agronova",
-      image: WeatherApp,
-      tools: [reactLogo, bootstrapLogo, sassLogo, figmaLogo],
-      codeRepo: "https://github.com/dannkis/GUI-Weather-App-Concept",
-      releaseRepo: null,
-    },
-    {
-      id: 9,
-      title: "CryptiQ",
-      image: CryptoWalletApp,
+      description:
+        "A secure crypto wallet for managing and transacting cryptocurrencies with ease and safety.",
       tools: [reactLogo, bootstrapLogo, sassLogo, figmaLogo],
       codeRepo: "https://github.com/dannkis/Crypto-Wallet-App-Concept",
       releaseRepo: null,
@@ -113,92 +71,108 @@ export default function Projects() {
   }, [projectData]);
 
   return (
-    <Row className="min-vh-100">
+    <Row>
       <Col xs={12}>
-        <Row>
-          <Col xs={12}>
-            <h3 className="text-secondary text-center scroll-here-projects">
-              projects
-            </h3>
-          </Col>
-        </Row>
-        <Row className="g-5 justify-content-center px-5">
-          {projectData.map((project, index) => {
-            const theme = cardThemes[index];
-            return (
-              <Col
-                xs={12}
-                md={6}
-                xl={4}
-                xxl={3}
-                className="d-flex justify-content-center"
-              >
-                <Card
-                  key={project.id}
-                  bg={theme.variant}
-                  className="project-card shadow rounded-5 overflow-hidden scale-1"
+        <Container fluid>
+          <Row>
+            <Col xs={12}>
+              <h3 className="text-secondary text-center scroll-here-projects">
+                projects
+              </h3>
+            </Col>
+          </Row>
+          <Row className="justify-content-evenly p-5 gy-4 align-items-center">
+            {projectData.map((project, index) => {
+              const theme = cardThemes[index];
+              return (
+                <Col
+                  xs={12}
+                  md={6}
+                  xl={4}
+                  xxl={3}
+                  className="d-flex justify-content-center"
                 >
-                  <div className="card-hover-content position-relative">
+                  <Card
+                    key={project.id}
+                    bg={theme.variant}
+                    className="project-card shadow rounded-5 overflow-hidden scale-1"
+                  >
                     <Card.Img
                       variant="top"
                       src={project.image}
                       alt={project.title}
-                      className="figuree rounded-top-5"
+                      className="rounded-top-5 blur-on-hover"
                     />
-                    <div className="hover-overlay position-absolute d-flex flex-column align-items-center justify-content-center h-100 w-100">
-                      <Button
-                        variant={theme.button}
-                        href={project.codeRepo}
-                        className="hover-btn rounded-5 mb-2"
+                    <Card.Body>
+                      <Container
+                        fluid
+                        className="description-overlay d-flex flex-column justify-content-center overflow-hidden position-absolute bottom-0 start-0 end-0 h-0"
                       >
-                        code repo
-                      </Button>
-                      {project.releaseRepo && (
-                        <Button
-                          variant={theme.button}
-                          href={project.releaseRepo}
-                          className="hover-btn rounded-5"
-                        >
-                          release repo
-                        </Button>
-                      )}
-                    </div>
-                  </div>
-                  <Card.Body>
-                    <Card.Title className="text-center">
-                      {project.title}
-                    </Card.Title>
-                  </Card.Body>
-                  <Card.Body className="py-0">
-                    <Card.Text className="text-center">
-                      &lt;tools used&gt;
-                    </Card.Text>
-                  </Card.Body>
-                  <Card.Body className="py-0">
-                    <Container fluid>
-                      <Row className="justify-content-between">
-                        {project.tools.map((tool, index) => (
-                          <Col
-                            xs={3}
-                            key={index}
-                            className="d-flex align-items-center justify-content-center p-4"
-                          >
-                            <Image
-                              fluid
-                              src={tool}
-                              alt="Tool Icon"
-                              className="tool-icon"
-                            />
+                        <Row>
+                          <Col xs={12} className="px-4 text-center">
+                            <p className="fw-bold">{"<description>"}</p>
                           </Col>
-                        ))}
-                      </Row>
-                    </Container>
-                  </Card.Body>
-                </Card>
-              </Col>
-            );
-          })}
-        </Row>
+                          <Col xs={12} className="px-4 text-center">
+                            <p>{project.description}</p>
+                          </Col>
+                        </Row>
+                        <Row>
+                          <Col
+                            xs={12}
+                            className="d-flex flex-column align-items-center justify-content-center h-100 w-100"
+                          >
+                            <Button
+                              variant={theme.button}
+                              href={project.codeRepo}
+                              className="rounded-5 mb-2 scale-1"
+                            >
+                              code_repo
+                            </Button>
+                            {project.releaseRepo && (
+                              <Button
+                                variant={theme.button}
+                                href={project.releaseRepo}
+                                className="rounded-5 scale-1"
+                              >
+                                release_repo
+                              </Button>
+                            )}
+                          </Col>
+                        </Row>
+                      </Container>
+                    </Card.Body>
+
+                    <Card.Body className="blur-on-hover">
+                      <Card.Title className="text-center">
+                        {project.title}
+                      </Card.Title>
+                    </Card.Body>
+                    <Card.Body className="blur-on-hover">
+                      <Card.Text className="text-center fw-bold">
+                        {"<tools_used>"}
+                      </Card.Text>
+                    </Card.Body>
+                    <Card.Body className="blur-on-hover">
+                      <Container fluid>
+                        <Row className="justify-content-evenly">
+                          {project.tools.map((tool) => (
+                            <Col
+                              xs={3}
+                              lg={2}
+                              className="d-flex align-items-center justify-content-center "
+                            >
+                              <Image fluid src={tool} alt="Tool Icon" />
+                            </Col>
+                          ))}
+                        </Row>
+                      </Container>
+                    </Card.Body>
+                  </Card>
+                </Col>
+              );
+            })}
+          </Row>
+        </Container>
       </Col>
     </Row>
   );

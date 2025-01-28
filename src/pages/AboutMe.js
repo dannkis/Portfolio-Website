@@ -48,7 +48,7 @@ export default function AboutMe() {
           <article id="portraitText">
             <hgroup>
               <h1 className="nameText1">daniil_zhelyazkov</h1>
-              <h5 className="text-dark nameText2">
+              <h5 className="nameText2 text-dark">
                 my_portfolio<span className="blink">_</span>
               </h5>
             </hgroup>

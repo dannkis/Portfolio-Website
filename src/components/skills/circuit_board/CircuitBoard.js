@@ -71,9 +71,9 @@ export default function CircuitBoard() {
   return (
     <Row className="py-3 d-none d-xl-block">
       <Col>
-        <Card className="rounded-3 shadow p-4">
+        <Card className="rounded-3 shadow p-4" bg="light">
           <Card.Body>
-            <Card.Title className="text-center fw-bold">
+            <Card.Title className="text-center fw-bold text-light">
               additional_skills
             </Card.Title>
           </Card.Body>
@@ -114,12 +114,12 @@ export default function CircuitBoard() {
                         >
                           <Row>
                             <Col>
-                              <span>compatibility</span>
+                              <span className="text-light">compatibility</span>
                             </Col>
                           </Row>
                           <Row className="h-100 pb-4 ">
                             <Col className="h-100 d-flex align-items-center justify-content-center">
-                              <span className="skills-hover-text">
+                              <span className="skills-hover-text text-light">
                                 Strong understanding of cross-platform
                                 compatibility.
                               </span>
@@ -178,12 +178,12 @@ export default function CircuitBoard() {
                         >
                           <Row>
                             <Col>
-                              <span>adaptation</span>
+                              <span className="text-light">adaptation</span>
                             </Col>
                           </Row>
                           <Row className="h-100 pb-4 ">
                             <Col className="h-100 d-flex align-items-center justify-content-center">
-                              <span className="skills-hover-text">
+                              <span className="skills-hover-text text-light">
                                 Easily adaptable to new challenging situations
                                 and complex frameworks.
                               </span>
@@ -221,12 +221,12 @@ export default function CircuitBoard() {
                         >
                           <Row>
                             <Col>
-                              <span>passion</span>
+                              <span className="text-light">passion</span>
                             </Col>
                           </Row>
                           <Row className="h-100 pb-4 ">
                             <Col className="h-100 d-flex align-items-center justify-content-center">
-                              <span className="skills-hover-text">
+                              <span className="skills-hover-text text-light">
                                 I am passionate about coding!
                               </span>
                             </Col>
@@ -270,12 +270,12 @@ export default function CircuitBoard() {
                         >
                           <Row>
                             <Col>
-                              <span>testing</span>
+                              <span className="text-light">testing</span>
                             </Col>
                           </Row>
                           <Row className="pb-4 h-100">
                             <Col className="d-flex align-items-center justify-content-center">
-                              <span className="skills-hover-text">
+                              <span className="skills-hover-text text-light">
                                 Producing production-ready code.
                               </span>
                             </Col>
@@ -315,12 +315,12 @@ export default function CircuitBoard() {
                         >
                           <Row>
                             <Col>
-                              <span>ux/ui</span>
+                              <span className="text-light">ux/ui</span>
                             </Col>
                           </Row>
                           <Row className="h-100 pb-4 ">
                             <Col className="h-100 d-flex align-items-center justify-content-center">
-                              <span className="skills-hover-text">
+                              <span className="skills-hover-text text-light">
                                 Keen attention to detail and a strong passion
                                 for user interface design.
                               </span>
@@ -374,12 +374,12 @@ export default function CircuitBoard() {
                         >
                           <Row>
                             <Col>
-                              <span>creativity</span>
+                              <span className="text-light">creativity</span>
                             </Col>
                           </Row>
                           <Row className="h-100 pb-4 ">
                             <Col className="h-100 d-flex align-items-center justify-content-center">
-                              <span className="skills-hover-text">
+                              <span className="skills-hover-text text-light">
                                 Constantly looking for creative ways to use
                                 latest technologies.
                               </span>

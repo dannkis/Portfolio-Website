@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Navbar, Nav, NavDropdown } from "react-bootstrap";
 import "./NavigationBar.scss";
 import BlinkingNavLink from "./BlinkingNavLink";
+import DarkModeToggle from "./DarkModeToggle";
 
 const NavigationBar = () => {
   const [lastVisPos, setLastVisPos] = useState(0);
@@ -10,7 +11,7 @@ const NavigationBar = () => {
   const [expanded, setExpanded] = useState(false);
 
   const handleCollapse = () => {
-    setExpanded(false); // Collapse the Navbar
+    setExpanded(false); // collapse the navbar
   };
 
   useEffect(() => {
@@ -38,7 +39,7 @@ const NavigationBar = () => {
     <Navbar
       expanded={expanded}
       expand="lg"
-      className={`row z-2 ${visible ? "navbar-visible" : "navbar-hidden"}`}
+      className={`row z-3 ${visible ? "navbar-visible" : "navbar-hidden"}`}
       sticky="top"
     >
       <Navbar.Toggle
@@ -46,7 +47,7 @@ const NavigationBar = () => {
         aria-controls="basic-navbar-nav"
       />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mx-auto space-evenly w-100 d-flex justify-content-between align-items-center px-5 bg-white rounded-3 shadow">
+        <Nav className="mx-auto space-evenly w-100 d-flex justify-content-between align-items-center px-5 rounded-3 shadow bg-light">
           <BlinkingNavLink onClick={handleCollapse} to="scroll-here-intro">
             about
           </BlinkingNavLink>
@@ -60,7 +61,7 @@ const NavigationBar = () => {
             projects
           </BlinkingNavLink>
           <NavDropdown
-            title="contactMe"
+            title="contact_me"
             id="basic-nav-dropdown"
             className="contactInfo"
           >
@@ -80,6 +81,8 @@ const NavigationBar = () => {
               linkedIn
             </NavDropdown.Item>
           </NavDropdown>
+
+          <DarkModeToggle />
         </Nav>
       </Navbar.Collapse>
     </Navbar>

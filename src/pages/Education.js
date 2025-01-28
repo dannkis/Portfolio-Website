@@ -79,7 +79,7 @@ export default function Education() {
               <Col
                 xs={12}
                 lg={6}
-                className="d-flex justify-content-center align-items-center"
+                className="d-flex justify-content-center align-items-center text-dark"
               >
                 <section>
                   <article>
@@ -118,7 +118,7 @@ export default function Education() {
                 lg={6}
                 className="d-flex justify-content-center align-items-center"
               >
-                <Carousel className="w-100" data-bs-theme="dark">
+                <Carousel className="w-100" variant="dark">
                   {(() => {
                     const items = [];
                     for (let i = 0; i < certificates.length; i += 2) {
@@ -147,7 +147,7 @@ export default function Education() {
                                       src={cert.certificate}
                                       alt={cert.name}
                                     />
-                                    <Card.Body className="text-dark">
+                                    <Card.Body className="text-black">
                                       <Card.Title className="h-100 d-flex justify-content-center align-items-center text-center">
                                         {cert.name}
                                       </Card.Title>

@@ -1,41 +1,18 @@
 .project-card {
-  .card-hover-content {
-    transition: all 0.3s ease;
-
-    img {
-      transition: filter 0.3s ease;
-      position: relative;
-    }
-
-    .hover-overlay {
-      top: 0;
-      left: 0;
-      background-color: rgba(0, 0, 0, 0.5);
-      opacity: 0;
-      transition: opacity 0.3s ease;
-    }
-
-    .hover-btn {
-      display: none;
-    }
+  .description-overlay {
+    z-index: 3;
+    height: 0;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: height 0.2s ease;
   }
 
   &:hover {
     z-index: 2;
-    .card-hover-content {
-      img {
-        filter: blur(4px);
-      }
-      .hover-overlay {
-        opacity: 1;
-
-        .hover-btn {
-          display: block;
-        }
-      }
+    .description-overlay {
+      height: 100%;
+    }
+    .blur-on-hover {
+      filter: blur(20px);
     }
   }
-}
-.transition-theme {
-  transition: background-color 2s ease, color 2s ease;
 }

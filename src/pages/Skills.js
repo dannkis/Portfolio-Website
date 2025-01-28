@@ -1,7 +1,6 @@
 import React from "react";
 import Carousel from "../components/skills/carousel/Carousel.js";
 import "./Skills.scss";
-import { Helmet } from "react-helmet";
 import { Container, Row, Col, Card } from "react-bootstrap";
 import CircuitBoard from "../components/skills/circuit_board/CircuitBoard.js";
 import HobbiesCar from "../components/skills/hobbies/HobbiesCar.js";
