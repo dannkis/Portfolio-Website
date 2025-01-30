@@ -1,10 +1,11 @@
 import React from "react";
-import { Container, Row, Col, Figure } from "react-bootstrap";
+import { Row, Col, Figure } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import "./AboutMe.scss";
 import portraitImage from "../images/portraitImage.JPG";
 import portraitImageBackground from "../images/blob.svg";
 
+// TODO: fix the background image to be a blob
 export default function AboutMe() {
   return (
     <>
