@@ -8,7 +8,7 @@ import Education from "./pages/Education.js";
 import Projects from "./pages/Projects.js";
 import "./app.scss";
 import "./components/RevealOnScroll.js";
-
+//main app
 function App() {
   return (
     <Router>
