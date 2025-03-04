@@ -47,7 +47,7 @@ const NavigationBar = () => {
         aria-controls="basic-navbar-nav"
       />
       <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mx-auto space-evenly w-100 d-flex justify-content-between align-items-center px-5 rounded-3 shadow bg-light">
+        <Nav className="mx-auto space-evenly w-100 d-flex justify-content-between align-items-center px-5 rounded-4 shadow bg-foreground">
           <BlinkingNavLink onClick={handleCollapse} to="scroll-here-intro">
             about
           </BlinkingNavLink>

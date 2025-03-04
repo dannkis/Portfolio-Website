@@ -71,9 +71,9 @@ export default function CircuitBoard() {
   return (
     <Row className="py-3 d-none d-xl-block">
       <Col>
-        <Card className="rounded-3 shadow p-4" bg="light">
+        <Card className="rounded-4 shadow p-4 bg-foreground">
           <Card.Body>
-            <Card.Title className="text-center fw-bold text-light">
+            <Card.Title className="text-center fw-bold text-dark">
               additional_skills
             </Card.Title>
           </Card.Body>

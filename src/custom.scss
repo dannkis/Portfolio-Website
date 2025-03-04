@@ -6,6 +6,7 @@
   --bs-secondary: #{$secondary};
   --bs-success: #{$success};
   --bs-dark: #{$dark};
+  --bs-dark-foreground: #{$light-foreground};
   --bs-light: #{$light};
   --bs-body-bg: #{$light};
   --bs-body-color: #{$dark};
@@ -20,6 +21,7 @@
   --bs-secondary: #{$secondary};
   --bs-success: #{$success};
   --bs-dark: #{$light};
+  --bs-dark-foreground: #{$dark-foreground};
   --bs-light: #{$dark};
   --bs-body-bg: #{$body-bg};
   --bs-body-color: #{$body-color};
@@ -27,6 +29,10 @@
   --bs-shadow: 0 0.2rem 0.5rem rgba(239, 239, 239, 0.023);
 
   --scrollbar-track-bg: #{$scrollbar-track-bg};
+}
+
+.bg-foreground {
+  background-color: var(--bs-dark-foreground);
 }
 
 .bg-light {

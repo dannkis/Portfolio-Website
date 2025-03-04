@@ -95,13 +95,13 @@ export default function Projects() {
                   <Card
                     key={project.id}
                     bg={theme.variant}
-                    className="project-card shadow rounded-5 overflow-hidden scale-1"
+                    className="project-card shadow rounded-4 overflow-hidden scale-1"
                   >
                     <Card.Img
                       variant="top"
                       src={project.image}
                       alt={project.title}
-                      className="rounded-top-5 blur-on-hover"
+                      className="blur-on-hover"
                     />
                     <Card.Body>
                       <Container

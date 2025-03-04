@@ -26,7 +26,7 @@ export default function Skills() {
               xl={4}
               className="d-flex flex-column flex-grow-1 card-my-md-1"
             >
-              <Card className="bg-secondary rounded-3 shadow h-100 justify-content-between ">
+              <Card className="bg-secondary rounded-4 shadow h-100 justify-content-between ">
                 <Card.Body>
                   <Card.Title className="text-center fw-bold">
                     programming
@@ -68,7 +68,7 @@ export default function Skills() {
             </Col>
 
             <Col sm={12} xl={4} className="d-flex card-my-md-1">
-              <Card className="bg-success rounded-3 shadow-sm h-100 d-flex justify-content-between">
+              <Card className="bg-success rounded-4 shadow-sm h-100 d-flex justify-content-between">
                 <Card.Body>
                   <Card.Title className="text-center fw-bold">
                     problem-solving
@@ -108,7 +108,7 @@ export default function Skills() {
               xl={4}
               className="d-flex flex-column flex-grow-1 card-my-md-1"
             >
-              <Card className="bg-secondary rounded-3 shadow h-100 justify-content-between">
+              <Card className="bg-secondary rounded-4 shadow h-100 justify-content-between">
                 <Card.Body>
                   <Card.Title className="text-center fw-bold">tools</Card.Title>
                 </Card.Body>

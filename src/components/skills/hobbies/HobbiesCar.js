@@ -90,7 +90,7 @@ export default function HobbiesCar() {
   return (
     <Row className="py-3 d-none d-xl-block">
       <Col>
-        <Card className="bg-primary rounded-3 shadow overflow-hidden">
+        <Card className="bg-primary rounded-4 shadow overflow-hidden">
           <Card.Body>
             <Card.Title className="text-center">hobbies</Card.Title>
           </Card.Body>
@@ -173,7 +173,7 @@ export default function HobbiesCar() {
               </Row>
               <Row className="mt-3">
                 <Col className="px-0">
-                  <div className="road rounded-bottom-5"></div>
+                  <div className="road bg-foreground"></div>
                 </Col>
               </Row>
             </Container>

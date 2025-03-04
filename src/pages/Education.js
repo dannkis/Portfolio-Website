@@ -136,14 +136,14 @@ export default function Education() {
                                   className="px-3 py-4"
                                 >
                                   <Card
-                                    className="rounded-5 shadow h-100 show-cursor card-certificate bg-secondary scale-1"
+                                    className="rounded-4 shadow h-100 show-cursor card-certificate bg-secondary scale-1"
                                     onClick={() =>
                                       openModal(cert.certificate, cert.name)
                                     }
                                   >
                                     <Card.Img
                                       variant="top"
-                                      className="card-img-max-h-1 rounded-top-5"
+                                      className="card-img-max-h-1 rounded-top-4"
                                       src={cert.certificate}
                                       alt={cert.name}
                                     />
