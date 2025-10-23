@@ -7,6 +7,7 @@ import javascriptCertificate from "../images/certificates/jsCertificate.jpg";
 import level2Certificate from "../images/certificates/level2Certificate.jpg";
 import matrixCertificate from "../images/certificates/matrixCertificate.jpg";
 import cSharpCertificate from "../images/certificates/cSharpCertificate.jpg";
+import compSciAward from "../images/certificates/compSciAward.jpg";
 
 export default function Education() {
   const [modal, setModal] = useState(false);
@@ -58,6 +59,10 @@ export default function Education() {
       certificate: cSharpCertificate,
       name: "c# intermediate",
     },
+    {
+      certificate: compSciAward,
+      name: "bsc (hons) computer science award",
+    },
   ];
 
   return (
@@ -84,10 +89,18 @@ export default function Education() {
                 <section>
                   <article>
                     <hgroup>
-                      <h4 className="text-secondary">2022 - PRESENT</h4>
+                      <h4 className="text-secondary">2025 - PRESENT</h4>
                       <p>
-                        BSc (Hons) Computer Science at Queen Mary University of
-                        London, London.
+                        Pursuing MSc Advanced Electronic and Electrical
+                        Engineering degree at Queen Mary University of London,
+                        London.
+                      </p>
+                    </hgroup>
+                    <hgroup>
+                      <h4 className="text-secondary">2022 - 2025</h4>
+                      <p>
+                        Achieved a First Class in BSc (Hons) Computer Science at
+                        Queen Mary University of London, London.
                       </p>
                     </hgroup>
                     <hgroup>
